@@ -16,3 +16,10 @@ ssh-keygen -t rsa
 * git hub
 git clone https://github.com/sbchang93/beyondme
 git clone https://github.com/tonychacon/blink
+
+
+* push
+git push origin master
+git remote show origin
+git push origin HEAD:refs/for/master ( 동작 안됨 )
+
