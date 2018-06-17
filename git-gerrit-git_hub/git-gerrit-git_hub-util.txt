@@ -16,6 +16,18 @@ $ git config --global -l
 $ git config --list
 
 
+----------------
+
+[ git허브에서 최초 "beyond_eng.git"만들고 README.md 화일 등록하는 방법 ]
+echo "# beyound_eng" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sbchang93/beyond_eng.git
+git push -u origin master
+
+----------------
+
 * key gen
 ssh-keygen -t rsa
 ( sudo ssh-keygen -t rsa -f /etc/ssh/ssh-host_dsa_key
