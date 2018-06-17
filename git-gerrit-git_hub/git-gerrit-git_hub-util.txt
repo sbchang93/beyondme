@@ -38,6 +38,12 @@ ssh-keygen -t rsa
 git clone https://github.com/sbchang93/beyondme
 git clone https://github.com/tonychacon/blink
 
+$ git remote -v
+origin  https://github.com/sbchang93/beyondme_eng.git (fetch)
+origin  https://github.com/sbchang93/beyondme_eng.git (push)
+
+
+
 * git pull
 
 * push
