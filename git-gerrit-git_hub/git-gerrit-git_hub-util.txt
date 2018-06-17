@@ -54,8 +54,10 @@ git push origin HEAD:refs/for/master ( 동작 안됨 )
 
 $ git pull  : 소스 받기
 $ git branch : 현재 브랜치 보여주기
-$ git log : git 서버에 머지되었거나 머지될 내용들을 보여주기
-$ git push : git 서버에 로컬에 수정된 내용을 머지하기
+$ git log : local 저장소에 머지되었거나 머지될 내용들을 보여주기
+
+$ git push origin master : romote의 git 서버에 local 저장소의 수정 사항을 머지하는 명령어 
+
 
 [수정 내용 반영]
 $ git add .
@@ -63,11 +65,20 @@ $ git status
 $ git add README
 $ git commit
 
+$ git push origin master  : 서버 반영
+
+
 [예제 (수정 및 commit) ]
 $ touch Readme.txt
 $ git status
 $ git add Readme.txt
 $ git commit -m “Add Readme.txt”
+
+$ git push origin master  : 서버 반영
+
+
+
+-----------
 
 $ git log
 $ git log -p
