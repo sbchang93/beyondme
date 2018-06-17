@@ -19,7 +19,7 @@ $ git config --list
 ----------------
 
 [ git허브에서 최초 "beyond_eng.git"만들고 README.md 화일 등록하는 방법 ]
-echo "# beyound_eng" >> README.md
+echo "# beyond_eng" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
