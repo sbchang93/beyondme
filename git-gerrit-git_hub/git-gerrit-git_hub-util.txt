@@ -1,3 +1,12 @@
+
+----------------------------------------------------------------
+
+* Git 설명 책 내용들
+
+https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F
+
+----------------------------------------------------------------
+
 git, gerrit, github
 
 $ git config --global user.name superman
@@ -17,12 +26,16 @@ ssh-keygen -t rsa
 git clone https://github.com/sbchang93/beyondme
 git clone https://github.com/tonychacon/blink
 
+* git pull
 
 * push
 git push origin master
 git remote show origin
 git push origin HEAD:refs/for/master ( 동작 안됨 )
 
+* git reset
+  ( https://git-scm.com/book/ko/v2/Git-도구-Reset-명확히-알고-가기  )
+  
 -------------------------------------------------------
 
 * git 명령어 예제
