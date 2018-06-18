@@ -13,6 +13,11 @@ http://remix.ethereum.org/#optimize=false&version=soljson-v0.4.24+commit.e67f014
 
 
 Metamask(여우지갑)는 크롬에서 플러그인으로 간단하게 설치해서 연동할 수 있음.
+Main Ethereum Network 만 피해서 붙이시면 됩니다! 메인넷에서 올리면 돈나가니까요 ㅎㅎ
+
+사실 metamask나 mist 보다도 geth 클라이언트 빌드 후 사용하시는걸 추천드립니다. 
+제공하는 API 들 그대로 사용할 수 있고, debug log 보기도 좋아 익숙해지시는걸 강추합니다. 
+private network 구축하려면 필수기도 하구요
 
 --------------------------------------------------------
 
