@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+
+* 참조용 홈페이지들 
+   . http://dcalt.tk/t/topic/55
+   . 
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+* Remix 링크 : http://remix.ethereum.org/#optimize=false&version=soljson-v0.4.24+commit.e67f0147.js
+
+* 예제 ( Greeter.sol )
+
+pragma solidity ^0.4.18;
+
+contract Greeter {
+     function sayHello() public pure returns(string) {
+         return "Hello";
+     }
+ }
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+* 예제 Greeter_2.sol
+
+pragma solidity ^0.4.18;
+
+contract Greeter_2 {
+     string message = "Hello";
+     
+     function sayHello() public view returns(string) {
+         return message;
+     }
+     
+     function changeHello(string _message) public {
+         message = _message;
+     }
+ }
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
