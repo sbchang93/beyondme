@@ -1,8 +1,5 @@
 -------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
 * geth 설치            
 https://gethstore.blob.core.windows.net/builds/geth-windows-amd64-1.8.11-dea1ce05.exe
  
@@ -12,13 +9,9 @@ https://gethstore.blob.core.windows.net/builds/geth-windows-amd64-1.8.11-dea1ce0
 * 미스트 설치 (mist) : 이더리움 월릿을 포함한 브라우저
 : https://github.com/ethereum/mist/releases
    => Mist-installer-0-10-0.exe
-
-
        ( 설치만 하면 "C:\Program Files\Mist" 가 생성됨. )  
 
    
-
-
 -------------------------------------------------------------------------------------------------------------------------------------
 
 * 블록체인 네트웍 구동시키는 예제 홈페이지들
@@ -32,24 +25,14 @@ https://gethstore.blob.core.windows.net/builds/geth-windows-amd64-1.8.11-dea1ce0
    - https://m.blog.naver.com/PostView.nhn?blogId=yoo37450&logNo=221196503550&proxyReferer=http%3A%2F%2Fwww.google.com%2Furl%3Fsa%3Dt%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dweb%26cd%3D10%26cad%3Drja%26uact%3D8%26ved%3D2ahUKEwjZl-jysN_bAhUIAogKHfpBC8MQFjAJegQIARBh%26url%3Dhttp%253A%252F%252Fm.blog.naver.com%252Fyoo37450%252F221196503550%26usg%3DAOvVaw0B8WNyvg_AVLrp_jQgKFHL
 
 
-
-
 -------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
 [ geth 이용해서 블록체인 네트웍 구동 시키기 ] 
-
-
-
-
 
 -----------------------------------------------------
 
 * 참조 홈페이지
   : https://crosswave.net/?p=1063
-
 
  -----------------------------------------------------
 
@@ -251,56 +234,28 @@ networkid는 genesis block의 것과 동일해야합니다
 
 > geth --dev console
 
-
-
-
 -----------------------------------------------------
 
 * 노드 설명 관련 명령어 ( P 157 페이지 참조 )
    - eth.accounts[0] => 0x5236dbd81aa373dbd99e0ae79c2a8d0e56b06a54   - personal.newAccount("pw0001")
    - eth.accounts[1] => 0xecf2b2a54350b211b39aa3d3bf0c873fffb54caa   - personal.newAccount("pw0002")
   - eth.accounts[2] => 0xc24e7fb8a73dba2ddfe8fea5f3cece8bd651e4cb   - personal.newAccount("pw0003")
-
   
 > admin.nodeInfo.enode
 
-
-
-
 > admin.addPeer (" ... @172.31.7.182:30303")
-
-
-
 
 > miner.setEtherbase(eth.accounts[0])
 
-
-
-
 > eth.coinbase
-
-
-
 
 > miner.start(1);
 
-
-
-
 > miner.stop();
-
-
-
 
 > net.peerCount
 
-
-
-
 > admin.peers
-
-
-
 
 
  ### 계좌 이체 방법
@@ -308,44 +263,30 @@ networkid는 genesis block의 것과 동일해야합니다
     2. 계좌 이체를 함.
  3. 마이닝을 시켜서 블록을 생성해줘야 transaction이 완료됨.
 
-
-
-
 > eth.sendTransaction({from:eth.coinbase, to:"0xecf2b2a54350b211b39aa3d3bf0c873fffb54caa", value:web3.toWei(5, "ether")})
   => 패스워드가 필요하다고 Error 발생함
 
-
-
-
 > personal.listWallets[0].status
-
-
-
 
 > web3.personal.unlockAccount(eth.coinbase) 
   // 계정 락 해제
 
-
-
-
 > web3.personal.unlockAccount(eth.coinbase, "pw0001")
    // 계정 락 해제
  
- > eth.sendTransaction({from:eth.coinbase, to:"0xecf2b2a54350b211b39aa3d3bf0c873fffb54caa", value:web3.toWei(5, "ether")})
+> eth.sendTransaction({from:eth.coinbase, to:"0xecf2b2a54350b211b39aa3d3bf0c873fffb54caa", value:web3.toWei(5, "ether")})
    
 > miner.start(1);
 
 > miner.stop();
    
-   
 > eth.blockNumber
+
 
 
  * 계정 확인 명령어
 > eth.accounts
 > eth.accounts[0] 
-
-
 
 
 * 계좌 잔고 확인
@@ -355,32 +296,19 @@ networkid는 genesis block의 것과 동일해야합니다
  -----------------------------------------------------
 
 
-
-
-
 -------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
 [ 리눅스 용 ] 
-
-
-
-
 * 코어 이더리움 프로그래밍 ( core ethereum programming ) - p145
-
 . 우분투에 Geth를 설히하는 경우
 
 $ sudo apt-get install software-properites-common
-
 $ sudo add-apt-repository -y ppa:ethereum/ethereum
-
 $ sudo apt-get update
-
 # sudo apt-get install ethereum
-
 -------------------------------------------------------------------------------------------------------------------------------------
 
